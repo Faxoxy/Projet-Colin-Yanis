@@ -12,6 +12,14 @@ public class Ecurie {
         this.sponsor = sponsor;
     }
 
+    //ajout getter pour le json
+    public ArrayList<Pilote> getListePilotes() {
+        return this.listePilotes;
+    }
+    public ArrayList<Formule> getListeFormules() {
+        return this.listeFormules;
+    }
+
     
 
     public void ajouterPilote(Pilote p) {

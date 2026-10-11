@@ -1,0 +1,141 @@
+{
+	"nom": "Grand Prix de Monaco",
+	"date": "24 Mai 2026",
+	"circuit": {
+		"nom": "Circuit de Monaco",
+		"lieu": "Monte Carlo",
+		"longueurPiste": 3.337
+	},
+	"lesEcuries": [
+		{
+			"nom": "Scuderia Ferrari",
+			"sponsor": "HP",
+			"listePilotes": [
+				{
+					"nom": "Leclerc",
+					"prenom": "Charles",
+					"age": 26,
+					"numeroCourse": 16,
+					"tempsReaction": 0.20
+				},
+				{
+					"nom": "Sainz",
+					"prenom": "Carlos",
+					"age": 29,
+					"numeroCourse": 55,
+					"tempsReaction": 0.22
+				}
+			],
+			"listeFormules": [
+				{
+					"modele": "Ferrari SF-24",
+					"poids": 798,
+					"vitesseMax": 350.0,
+					"typedeGomme": "Tendre",
+					"estDemarre": false,
+					"pilote": {
+						"nom": "Leclerc",
+						"prenom": "Charles",
+						"age": 26,
+						"numeroCourse": 16,
+						"tempsReaction": 0.20
+					}
+				},
+				{
+					"modele": "Ferrari SF-24",
+					"poids": 798,
+					"vitesseMax": 350.0,
+					"typedeGomme": "Medium",
+					"estDemarre": false,
+					"pilote": {
+						"nom": "Sainz",
+						"prenom": "Carlos",
+						"age": 29,
+						"numeroCourse": 55,
+						"tempsReaction": 0.22
+					}
+				}
+			]
+		},
+		{
+			"nom": "Mercedes-AMG Petronas",
+			"sponsor": "Petronas",
+			"listePilotes": [
+				{
+					"nom": "Hamilton",
+					"prenom": "Lewis",
+					"age": 39,
+					"numeroCourse": 44,
+					"tempsReaction": 0.19
+				},
+				{
+					"nom": "Russell",
+					"prenom": "George",
+					"age": 26,
+					"numeroCourse": 63,
+					"tempsReaction": 0.21
+				}
+			],
+			"listeFormules": [
+				{
+					"modele": "Mercedes W15",
+					"poids": 798,
+					"vitesseMax": 348.5,
+					"typedeGomme": "Dur",
+					"estDemarre": false,
+					"pilote": {
+						"nom": "Hamilton",
+						"prenom": "Lewis",
+						"age": 39,
+						"numeroCourse": 44,
+						"tempsReaction": 0.19
+					}
+				},
+				{
+					"modele": "Mercedes W15",
+					"poids": 798,
+					"vitesseMax": 348.5,
+					"typedeGomme": "Tendre",
+					"estDemarre": false,
+					"pilote": {
+						"nom": "Russel",
+						"prenom": "George",
+						"age": 26,
+						"numeroCourse": 63,
+						"tempsReaction": 0.21
+					}
+				}
+			]
+		}
+	],
+	"listeAssistance": [
+		{
+			"modele": "Aston Martin Vantage",
+			"poids": 1600,
+			"vitesseMax": 310.0,
+			"estDemarre": false,
+			"typeAssistance": "Safety Car",
+			"enIntervention": false,
+			"technicien": {
+				"nom": "Bono",
+				"prenom": "Peter",
+				"age": 45,
+				"role": "Chef Mécanicien"
+			}
+		},
+		{
+			"modele": "Aston Martin DBX707",
+			"poids": 2245,
+			"vitesseMax": 310.0,
+			"estDemarre": false,
+			"typeAssistance": "Medical Car",
+			"enIntervention": false,
+			"technicien": {
+				"nom": "Roberts",
+				"prenom": "Ian",
+				"age": 51,
+				"role": "Médecin de piste"
+			}
+		}
+	]
+}

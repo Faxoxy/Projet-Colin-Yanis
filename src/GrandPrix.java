@@ -14,6 +14,18 @@ public class GrandPrix {
         this.circuit = circuit;
     }
 
+
+    //ajout getter pour le json
+    public Circuit getCircuit() {
+        return this.circuit;
+    }
+    public ArrayList<Ecurie> getLesEcuries() {
+        return this.lesEcuries;
+    }
+    public ArrayList<VehiculeAssistance> getListeAssistance() {
+        return this.listeAssistance;
+    }
+
     public String toString() {
         return "Grand Prix : " + this.nom + " | Date : " + this.date + 
                "\n\t -> " + this.circuit + 

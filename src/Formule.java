@@ -16,6 +16,6 @@ public class Formule extends Vehicule{
     }
 
     public String toString() {
-        return "Formule :\n\t modele: "+super.modele+"\n poids: "+poids+"\n vitesseMax: "+vitesseMax+"\n typedeGomme: "+typedeGomme+"\n pilote:"+pilote;
+        return "Formule :\n modele: "+super.modele+"\n poids: "+poids+"\n vitesseMax: "+vitesseMax+"\n typedeGomme: "+typedeGomme+"\n pilote:"+pilote;
     }
 }
