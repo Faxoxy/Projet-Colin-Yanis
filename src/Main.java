@@ -17,22 +17,25 @@ public class Main {
         try (Reader lecteur = new FileReader("data/grand_prix.json")) {
             GrandPrix gpMonaco = gson.fromJson(lecteur, GrandPrix.class);
             
-            System.out.println(gpMonaco); // Affiche le résumé du GP
+            IHM fenetre1 = new IHM(gpMonaco);
+            fenetre1.setVisible(true);
+
+            IHMmobile fenetre2 = new IHMmobile(gpMonaco);
+            fenetre2.setVisible(true);
+
+            System.out.println(gpMonaco);
             
             System.out.println("\n========== 1. DÉTAIL DU CIRCUIT ==========");
             System.out.println(gpMonaco.getCircuit());
             
             System.out.println("\n========== 2. DÉTAIL DES ÉCURIES (Pilotes et Véhicules) ==========");
-            // On fouille dans la liste des écuries du Grand Prix
             for (Ecurie ecurie : gpMonaco.getLesEcuries()) {
-                System.out.println(ecurie); // Affiche Scuderia Ferrari...
+                System.out.println(ecurie);
                 
-                // On fouille dans les pilotes de cette écurie
-                for (Pilote p : ecurie.getListePilotes()) {
+                for (Pilote p : ecurie.getListePilotes()) { //equivalent : for (int i = 0; i < ecurie.getListeFormules().size(); i++)
                     p.afficherInfos(); 
                 }
                 
-                // On fouille dans les formules de cette écurie
                 for (Formule f : ecurie.getListeFormules()) {
                     System.out.println(f);
                 }

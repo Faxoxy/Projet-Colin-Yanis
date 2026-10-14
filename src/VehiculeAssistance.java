@@ -26,6 +26,6 @@ public class VehiculeAssistance extends Vehicule {
     }
     
     public String toString() {
-        return  "VehiculeAssistance : \n modele : " + modele + "\n poids: " + poids + "\n vitesseMax: " + vitesseMax + "\n typeAssistance: "+typeAssistance+"\n enIntervention: "+enIntervention+"\n technicien: "+technicien;
+        return  "VehiculeAssistance : \n   Modele : " + modele + "\n   Poids : " + poids + "\n   Vitesse max : " + vitesseMax + "\n   Type assistance : "+typeAssistance+"\n   En intervention : "+enIntervention+"\n   Technicien : "+technicien;
     }
 }

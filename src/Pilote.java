@@ -14,6 +14,6 @@ public class Pilote extends Personne{
     }
 
     public String toString() {
-        return "Pilote: \n nom: "+super.nom+"\n prenom: "+ super.prenom+"\n age: "+super.age+"\n numeroCourse: "+this.numeroCourse+"\n tempsReaction: "+this.tempsReaction ;
+        return "Pilote : \n   Nom : "+super.nom+"\n   Prenom : "+ super.prenom+"\n   Age : "+super.age+"\n   Numero Course : "+this.numeroCourse+"\n   Temps de reaction : "+this.tempsReaction;
     }
 }
